@@ -64,6 +64,10 @@ public class DailyPricesHostedServices: IDailyPricesHostedServices
             client.DefaultRequestHeaders.Add("X-RapidAPI-Key", _rapidApiKey);
             client.DefaultRequestHeaders.Add("X-RapidAPI-Host", _rapidApiHost);
             var list = new List<string>();
+            
+            /**
+             * I don't like this part below because i could have handle the call match better and the data cleaning part. 
+             */
             foreach (var s in _companySymbolList)
             {
                 string msg;
