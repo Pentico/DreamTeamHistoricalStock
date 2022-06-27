@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreamTeam.Historical.Stock.Price.Dashboard.API", "DreamTeam.Historical.Stock.Price.Dashboard.API\DreamTeam.Historical.Stock.Price.Dashboard.API.csproj", "{13F623F9-B76E-403B-B24F-3BD44201E116}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API", "API", "{4C902B30-7C4E-4F72-9219-296922120415}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{C9F7121B-4C7B-4975-BC1D-EEFE0CE4411A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DreamTeam.Historical.Stock.Price.Dashboard.Application", "DreamTeam.Historical.Stock.Price.Dashboard.Application\DreamTeam.Historical.Stock.Price.Dashboard.Application.csproj", "{A2A48901-22DE-49BD-856F-BB365525FAC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{13F623F9-B76E-403B-B24F-3BD44201E116}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13F623F9-B76E-403B-B24F-3BD44201E116}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13F623F9-B76E-403B-B24F-3BD44201E116}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13F623F9-B76E-403B-B24F-3BD44201E116}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2A48901-22DE-49BD-856F-BB365525FAC3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2A48901-22DE-49BD-856F-BB365525FAC3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2A48901-22DE-49BD-856F-BB365525FAC3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2A48901-22DE-49BD-856F-BB365525FAC3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{13F623F9-B76E-403B-B24F-3BD44201E116} = {4C902B30-7C4E-4F72-9219-296922120415}
+		{A2A48901-22DE-49BD-856F-BB365525FAC3} = {C9F7121B-4C7B-4975-BC1D-EEFE0CE4411A}
+	EndGlobalSection
+EndGlobal

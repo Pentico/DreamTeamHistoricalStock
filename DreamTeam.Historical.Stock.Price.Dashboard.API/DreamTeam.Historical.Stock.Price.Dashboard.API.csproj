@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.0.0" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+        <PackageReference Include="Microsoft.Extensions.Options" Version="6.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\DreamTeam.Historical.Stock.Price.Dashboard.Application\DreamTeam.Historical.Stock.Price.Dashboard.Application.csproj" />
+      <ProjectReference Include="..\DreamTeam.Historical.Stock.Price.Dashboard.Data\DreamTeam.Historical.Stock.Price.Dashboard.Data.csproj" />
+      <ProjectReference Include="..\DreamTeam.Historical.Stock.Price.Dashboard.Domain\DreamTeam.Historical.Stock.Price.Dashboard.Domain.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Controllers" />
+    </ItemGroup>
+
+</Project>

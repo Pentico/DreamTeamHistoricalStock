@@ -1,0 +1,13 @@
+.table_column {
+  font-size: .8rem;
+  font-weight: 400;
+}
+
+.TM_Card {
+  margin: 2rem;
+
+  &_header {
+    padding: 1rem;
+    color: grey;
+  }
+}

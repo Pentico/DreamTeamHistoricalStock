@@ -1,0 +1,61 @@
+
+
+
+<p-card styleClass="TM_Card">
+
+  <h4 class="TM_Card_header">Daily Prices (open, high, low, close) and Volumes</h4>
+
+  <p-table  [value]="items" [paginator]="true" [rows]="10" styleClass="p-datatable-sm">
+    <ng-template pTemplate="header">
+      <tr class="table_column">
+        <th>Symbol <p-columnFilter type="text" field="name" display="menu"></p-columnFilter></th>
+        <th>TimeZone</th>
+        <th>lastRefreshed</th>
+        <th>View Prices</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-price>
+      <tr class="table_column">
+        <td>{{price.MetaData.Symbol}}</td>
+        <td>{{price.MetaData.TimeZone}}</td>
+        <td>{{price.MetaData.LastRefreshed }} </td>
+        <td>
+          <p-button label="View Prices" (click)="onViewPRices(price.MetaData.Symbol)" ></p-button>
+        </td>
+      </tr>
+    </ng-template>
+
+  </p-table>
+</p-card>
+
+
+<p-dialog header="Title"   [(visible)]="display" (onHide)="onhide()" [breakpoints]="{'960px': '75vw', '640px': '100vw'}" [style]="{width: '80vw'}"  closeIcon="pi pi-times">
+  <p-card styleClass="TM_Card"  >
+  <h4 class="TM_Card_header">Time Series Daily</h4>
+
+  <p-table   [value]="arr" [paginator]="true" [rows]="10" styleClass="p-datatable-sm">
+    <ng-template pTemplate="header">
+      <tr class="table_column">
+        <th>Date <p-columnFilter type="text" field="name" display="menu"></p-columnFilter></th>
+        <th>Open</th>
+        <th>High</th>
+        <th>Low</th>
+        <th>Close</th>
+        <th>Volume</th>
+      </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-price>
+      <tr class="table_column">
+        <td>{{price.Date}}</td>
+        <td>{{price.open}}</td>
+        <td>{{price.high }} </td>
+        <td>{{price.low}}</td>
+        <td>{{price.close }} </td>
+        <td>{{price.volume }} </td>
+      </tr>
+    </ng-template>
+
+  </p-table>
+  </p-card>
+
+</p-dialog>

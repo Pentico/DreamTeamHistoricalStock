@@ -1,0 +1,63 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,*::before,*::after {
+  box-sizing: inherit;
+}
+html {
+  box-sizing: border-box;
+  font-size: 78.5%; // 1rem = 10px,  10px/16px = 62.5
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 2.6;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.TM_Body {
+  padding: 2rem;
+  min-height: 83vh;
+  &_sidebar {
+    margin-top: 6.2rem;
+    padding: 1rem;
+  }
+}
+
+.TM_Sidebar {
+  &--item {
+    &_button {
+      width: 15rem;
+
+      &_button:first-child {
+
+      }
+    }
+  }
+
+  &--item:first-child {
+    margin-top: 4rem;
+  }
+}
+
+.TM_Section {
+  background-color: var(--surface-d);
+  margin: 8rem 1rem 1rem;
+}
+
+.TM_Card {
+  margin: 2rem;
+
+  &_header {
+    padding: 1rem;
+    color: grey;
+  }
+}
+
